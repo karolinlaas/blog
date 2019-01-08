@@ -1,4 +1,21 @@
-<h1>Welcome!</h1>
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<?foreach($posts as $post):?>
+<div class="span8">
+    <h1><?=$post['post_subject']?></h1>
+    <p><?=$post['post_text']?></p>
+    <div>
+        <span class="badge badge-success"><?=$post['post_created']?></span><div class="pull-right"><span class="label">alice</span> <span class="label">story</span> <span class="label">blog</span> <span class="label">personal</span></div>
+    </div>
+    <hr>
+
+</div>
+
+<?endforeach?>
+<!--<h1>Welcome!</h1>
 
 
 <p>This is the welcome controller's default view file. It is located at <code>/views/welcome/welcome_index.php</code>.
@@ -53,13 +70,13 @@ server by jQuery and server's response will be written to the box below.
     server will invoke <code>post::post_index()</code> action (which is in <code>/controllers/posts.php</code> file)
     which just dumps $_POST to the screen.</p>
 <!-- Button for executing post -->
-<form method="post">
+<!--<form method="post">
     <input type="text" name="foobar"/>
     <input type="submit" value="Post"/>
-</form>
+</form>-->-->
 
 <!-- Code for ajax -->
-<script type="text/javascript">
+<!--<script type="text/javascript">
     function success() {
         ajax("welcome/success", $("#ajax-form").serialize(), function (json) {
             $(".result").html(json.data);
@@ -71,4 +88,4 @@ server by jQuery and server's response will be written to the box below.
             $(".result").html(json.data);
         });
     }
-</script>
+</script>-->
