@@ -15,6 +15,9 @@
          <hr>
             <h5><?=$post['post_created']?></h5>
             <h5>Tags:</h5>
+         <?foreach ($tags as $tag):?>
+             <a href="#"><span class="label label-info"><?=$tag['tag_name']?></span></a>
+         <?endforeach?>
          <hr>
          <article>
              <p><?=$post['post_text']?></p>
