@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 08, 2019 at 10:39 AM
+-- Generation Time: Jan 10, 2019 at 08:58 AM
 -- Server version: 5.6.41
 -- PHP Version: 7.2.7
 
@@ -40,7 +40,8 @@ INSERT INTO `post` (`post_id`, `post_subject`, `post_text`, `post_created`, `use
 (2, 'Test', 'Sisu test', '2019-01-08 08:15:56', 1),
 (3, 'Test', 'Sisu test', '2019-01-08 08:16:01', 1),
 (4, 'Test_2', 'Teine sisu test', '2019-01-08 08:34:12', 1),
-(5, 'Test_2', 'Teine sisu test', '2019-01-08 08:34:14', 1);
+(5, 'Test_2', 'Teine sisu test', '2019-01-08 08:34:14', 1),
+(6, 'Test_3', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur varius ex, cursus facilisis mauris vestibulum nec. Aliquam pulvinar efficitur molestie. Praesent laoreet viverra auctor. Suspendisse eget lacinia urna. Suspendisse consectetur felis risus, sed pharetra ligula pulvinar non. Nunc vehicula, neque et congue malesuada, nulla tortor sollicitudin sapien, eget commodo quam tortor non odio. Integer suscipit rhoncus justo et auctor. Quisque et urna dapibus, sodales turpis et, luctus nibh.\r\n\r\nMorbi ornare velit at nulla bibendum malesuada. Aenean sed fringilla eros, quis rutrum libero. Curabitur mollis rutrum tincidunt. Quisque libero orci, fermentum varius vulputate id, ultrices vel justo. Vivamus consectetur sed leo at suscipit. Donec aliquam sed odio id accumsan. Aenean vel felis varius, auctor tellus nec, scelerisque nulla. Praesent sit amet neque dui. Proin semper pulvinar turpis a consectetur. Sed volutpat nibh sit amet massa luctus venenatis.', '2019-01-10 06:49:11', 1);
 
 -- --------------------------------------------------------
 
@@ -88,7 +89,8 @@ INSERT INTO `translations` (`translation_id`, `phrase`, `language`, `translation
 (23, 'Oops...', 'en', '{untranslated}', 'global', 'global'),
 (24, 'Close', 'en', '{untranslated}', 'global', 'global'),
 (25, 'Server returned an error. Please try again later ', 'en', '{untranslated}', 'global', 'global'),
-(26, 'Action', 'en', '{untranslated}', 'global', 'global');
+(26, 'Action', 'en', '{untranslated}', 'global', 'global'),
+(27, 'Wrong username or password', 'en', '{untranslated}', 'global', 'global');
 
 -- --------------------------------------------------------
 
@@ -145,13 +147,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `post_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `post_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `translations`
 --
 ALTER TABLE `translations`
-  MODIFY `translation_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `translation_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `users`
